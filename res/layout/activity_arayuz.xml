@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArayuzActivity"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="395dp"
+        android:layout_height="235dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="401dp"
+            android:layout_height="222dp"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="400dp"
+        android:layout_height="603dp"
+        android:background="#FFFFFF"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.946">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="360dp"
+            android:layout_height="420dp"
+            android:background="@color/white"
+            app:columnCount="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rowCount="3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="175dp"
+                android:layout_height="132dp"
+
+                android:orientation="vertical"
+                app:layout_column="0"
+                app:layout_row="0">
+
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="152dp"
+                    android:layout_height="104dp"
+                    android:background="@drawable/raunded_background"
+                    android:backgroundTint="#FFFFFF"
+                    android:drawableTop="@drawable/baseline_calculate_24"
+                    android:gravity="center"
+                    android:text="Hesap Makinesi"
+                    android:textAllCaps="false"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="190dp"
+                android:layout_height="130dp"
+                android:orientation="vertical"
+                app:layout_column="1"
+                app:layout_row="0">
+
+                <Button
+                    android:id="@+id/imageButton2"
+                    android:layout_width="152dp"
+                    android:layout_height="104dp"
+                    android:background="@drawable/raunded_background"
+                    android:drawableTop="@drawable/baseline_notifications_24"
+                    android:gravity="center"
+                    android:text="Harran Duyuru"
+                    android:textAllCaps="false"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="176dp"
+                android:layout_height="123dp"
+                android:orientation="vertical"
+                app:layout_column="0"
+                app:layout_row="1">
+
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="152dp"
+                    android:layout_height="104dp"
+                    android:background="@drawable/raunded_background"
+                    android:drawableTop="@drawable/baseline_assistant_navigation_24"
+                    android:gravity="center"
+                    android:text="GPS"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="186dp"
+                android:layout_height="122dp"
+                android:orientation="vertical"
+                app:layout_column="1"
+                app:layout_row="1">
+
+                <Button
+                    android:id="@+id/butto"
+                    android:layout_width="152dp"
+                    android:layout_height="104dp"
+                    android:background="@drawable/raunded_background"
+                    android:drawableTop="@drawable/baseline_pending_actions_24"
+                    android:gravity="center"
+                    android:text="ETKİNLİK"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_column="1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_row="2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="177dp"
+                android:layout_height="147dp"
+                android:orientation="vertical"
+                app:layout_column="0"
+                app:layout_row="2">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="152dp"
+                    android:layout_height="104dp"
+                    android:background="@drawable/raunded_background"
+                    android:drawableTop="@drawable/baseline_fastfood_24"
+                    android:gravity="center"
+                    android:text="YEMEK"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="186dp"
+                android:layout_height="149dp"
+                android:orientation="vertical"
+                app:layout_column="1"
+                app:layout_row="2">
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="152dp"
+                    android:layout_height="104dp"
+                    android:background="@drawable/raunded_background"
+                    android:drawableTop="@drawable/baseline_videogame_asset_24"
+                    android:gravity="center"
+                    android:text="OYUN"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.gridlayout.widget.GridLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
